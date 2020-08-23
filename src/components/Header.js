@@ -36,22 +36,22 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand tag={Link} href="/">Gavaintra.P</NavbarBrand>
+      <Navbar color="primary" dark expand="md">
+        <NavbarBrand tag={Link} to="/">Gavaintra.P</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} href="/components/">เกี่ยวกับเรา</NavLink>
+              <NavLink tag={Link} to="/about/">เกี่ยวกับเรา</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} href="/contact">ติดต่อเรา</NavLink>
+              <NavLink tag={Link} to="/contact">ติดต่อเรา</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} href="/products">สินค้า</NavLink>
+              <NavLink tag={Link} to="/products">สินค้า</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} href="/profile">ข้อมูลส่วนตัว</NavLink>
+              <NavLink tag={Link} to="/profile">ข้อมูลส่วนตัว</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
